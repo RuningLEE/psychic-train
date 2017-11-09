@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrderViewController">
+            <connections>
+                <outlet property="tableView" destination="Xgu-U4-16i" id="Kxv-2L-IdM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBlank" destination="Hhw-35-UVV" id="kUo-hN-Ajb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hef-aJ-1Zc">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2p-YY-RIj">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcY-hB-ehE">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="LLi-66-lE8"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="返回"/>
+                            <connections>
+                                <action selector="goBack:" destination="-1" eventType="touchUpInside" id="lPM-tG-z4Q"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAE-ag-5HJ" customClass="PixelLineView">
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Tav-d5-eNX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HcY-hB-ehE" secondAttribute="bottom" id="3dE-ZU-KLc"/>
+                        <constraint firstItem="HcY-hB-ehE" firstAttribute="top" secondItem="hef-aJ-1Zc" secondAttribute="top" constant="20" id="4Ge-Zz-z5r"/>
+                        <constraint firstAttribute="height" constant="64" id="Aq2-Uo-Lku"/>
+                        <constraint firstItem="HcY-hB-ehE" firstAttribute="leading" secondItem="hef-aJ-1Zc" secondAttribute="leading" id="DfG-aL-iRB"/>
+                        <constraint firstAttribute="trailing" secondItem="cAE-ag-5HJ" secondAttribute="trailing" id="NuN-Ws-hNQ"/>
+                        <constraint firstAttribute="bottom" secondItem="cAE-ag-5HJ" secondAttribute="bottom" id="S7k-Hb-qhz"/>
+                        <constraint firstItem="P2p-YY-RIj" firstAttribute="centerY" secondItem="hef-aJ-1Zc" secondAttribute="centerY" constant="10" id="s1d-Dl-zqx"/>
+                        <constraint firstItem="cAE-ag-5HJ" firstAttribute="leading" secondItem="hef-aJ-1Zc" secondAttribute="leading" id="uub-Hg-V2R"/>
+                        <constraint firstItem="P2p-YY-RIj" firstAttribute="centerX" secondItem="hef-aJ-1Zc" secondAttribute="centerX" id="yQg-uI-g2u"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRz-LW-4Ts">
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.098039215690000001" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3c2-n2-xhZ"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="上传订单">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadOrder:" destination="-1" eventType="touchUpInside" id="db0-j3-7F5"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xgu-U4-16i">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xgu-U4-16i" secondAttribute="trailing" id="0Yg-5M-7Um"/>
+                <constraint firstItem="GRz-LW-4Ts" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="17Q-cA-nKN"/>
+                <constraint firstItem="hef-aJ-1Zc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2la-2k-PAP"/>
+                <constraint firstAttribute="trailing" secondItem="GRz-LW-4Ts" secondAttribute="trailing" id="6ZQ-Ok-gXD"/>
+                <constraint firstAttribute="bottom" secondItem="GRz-LW-4Ts" secondAttribute="bottom" id="JfK-83-3Hb"/>
+                <constraint firstItem="GRz-LW-4Ts" firstAttribute="top" secondItem="Xgu-U4-16i" secondAttribute="bottom" id="Ukz-FN-ZWI"/>
+                <constraint firstItem="Xgu-U4-16i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="avd-6a-N14"/>
+                <constraint firstItem="hef-aJ-1Zc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e2C-bt-0pE"/>
+                <constraint firstAttribute="trailing" secondItem="hef-aJ-1Zc" secondAttribute="trailing" id="ok9-lK-IeE"/>
+                <constraint firstItem="Xgu-U4-16i" firstAttribute="top" secondItem="hef-aJ-1Zc" secondAttribute="bottom" id="yu4-yh-QWu"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="Hhw-35-UVV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZ7-9e-LOk">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-Ho-3nk">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.37647058820000001" green="0.098039215690000001" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="没有预约单提示" translatesAutoresizingMaskIntoConstraints="NO" id="2MX-BV-fZA"/>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="2MX-BV-fZA" firstAttribute="centerX" secondItem="rZ7-9e-LOk" secondAttribute="centerX" id="4n8-eB-cSa"/>
+                        <constraint firstItem="rJK-Ho-3nk" firstAttribute="top" secondItem="2MX-BV-fZA" secondAttribute="bottom" constant="19" id="A17-PM-gWx"/>
+                        <constraint firstItem="rJK-Ho-3nk" firstAttribute="centerX" secondItem="rZ7-9e-LOk" secondAttribute="centerX" id="Foi-7o-C0h"/>
+                        <constraint firstItem="2MX-BV-fZA" firstAttribute="centerY" secondItem="rZ7-9e-LOk" secondAttribute="centerY" constant="-30" id="acp-ai-Qty"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rZ7-9e-LOk" secondAttribute="bottom" id="LZP-yT-oIK"/>
+                <constraint firstItem="rZ7-9e-LOk" firstAttribute="top" secondItem="Hhw-35-UVV" secondAttribute="top" id="pFV-gh-2AP"/>
+                <constraint firstItem="rZ7-9e-LOk" firstAttribute="leading" secondItem="Hhw-35-UVV" secondAttribute="leading" id="wy6-eb-2We"/>
+                <constraint firstAttribute="trailing" secondItem="rZ7-9e-LOk" secondAttribute="trailing" id="ykU-rQ-LsF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="460.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="没有预约单提示" width="180" height="70"/>
+        <image name="返回" width="10" height="20"/>
+    </resources>
+</document>

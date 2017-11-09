@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="50E-jq-q5G" customClass="SendMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="50E-jq-q5G" id="Bl3-g3-zTN">
+                <frame key="frameInset" width="351" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="正中" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-yC-1ax">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Mv6-CS-Tmu"/>
+                            <constraint firstAttribute="width" constant="40" id="h06-eK-bhr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ffda" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y27-hB-iED">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y27-hB-iED" firstAttribute="top" secondItem="Bl3-g3-zTN" secondAttribute="topMargin" constant="22" id="3sA-3L-RjX"/>
+                    <constraint firstItem="Y27-hB-iED" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bl3-g3-zTN" secondAttribute="leadingMargin" constant="82" id="JYu-Dq-xOF"/>
+                    <constraint firstItem="lYh-yC-1ax" firstAttribute="top" secondItem="Y27-hB-iED" secondAttribute="top" constant="-12" id="JiC-cL-TRV"/>
+                    <constraint firstItem="lYh-yC-1ax" firstAttribute="leading" secondItem="Y27-hB-iED" secondAttribute="trailing" constant="16" id="Kz0-am-hui"/>
+                    <constraint firstItem="lYh-yC-1ax" firstAttribute="trailing" secondItem="Bl3-g3-zTN" secondAttribute="trailingMargin" constant="-7" id="PAH-3b-ZSc"/>
+                    <constraint firstItem="lYh-yC-1ax" firstAttribute="centerY" secondItem="Bl3-g3-zTN" secondAttribute="centerY" id="iLP-PM-3pU"/>
+                    <constraint firstItem="Y27-hB-iED" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bl3-g3-zTN" secondAttribute="trailingMargin" constant="10" id="rCL-Br-UJj"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="rCL-Br-UJj"/>
+                        <exclude reference="iLP-PM-3pU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageviewHead" destination="lYh-yC-1ax" id="lhs-WT-Gpc"/>
+                <outlet property="labelContent" destination="Y27-hB-iED" id="qjc-Nz-Pcc"/>
+            </connections>
+            <point key="canvasLocation" x="-95.5" y="293"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="正中" width="117" height="117"/>
+    </resources>
+</document>

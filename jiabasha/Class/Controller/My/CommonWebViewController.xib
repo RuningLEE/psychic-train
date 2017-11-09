@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonWebViewController">
+            <connections>
+                <outlet property="labelTitle" destination="uao-PX-47e" id="iC8-18-m3G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="wPk-xm-bmx" id="Wbe-zh-6Ti"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSi-0l-8fo">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员特权" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uao-PX-47e">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVe-Hc-0at">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="Xyk-jv-6ll"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="返回"/>
+                            <connections>
+                                <action selector="goBack:" destination="-1" eventType="touchUpInside" id="NQ0-DT-044"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouT-eX-ViA" customClass="PixelLineView">
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="wU2-EW-Yvg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ouT-eX-ViA" secondAttribute="bottom" id="FVw-M2-fiv"/>
+                        <constraint firstItem="zVe-Hc-0at" firstAttribute="leading" secondItem="lSi-0l-8fo" secondAttribute="leading" id="P4F-BM-Upe"/>
+                        <constraint firstItem="ouT-eX-ViA" firstAttribute="leading" secondItem="lSi-0l-8fo" secondAttribute="leading" id="VZc-Vs-6rf"/>
+                        <constraint firstItem="uao-PX-47e" firstAttribute="centerY" secondItem="lSi-0l-8fo" secondAttribute="centerY" constant="10" id="caT-fG-rtu"/>
+                        <constraint firstAttribute="height" constant="64" id="paW-FZ-Owd"/>
+                        <constraint firstAttribute="bottom" secondItem="zVe-Hc-0at" secondAttribute="bottom" id="rbc-iD-77W"/>
+                        <constraint firstAttribute="trailing" secondItem="ouT-eX-ViA" secondAttribute="trailing" id="t7q-yU-7xQ"/>
+                        <constraint firstItem="uao-PX-47e" firstAttribute="centerX" secondItem="lSi-0l-8fo" secondAttribute="centerX" id="xVf-fv-0dm"/>
+                        <constraint firstItem="zVe-Hc-0at" firstAttribute="top" secondItem="lSi-0l-8fo" secondAttribute="top" constant="20" id="ypV-QT-hAJ"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPk-xm-bmx">
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wPk-xm-bmx" secondAttribute="bottom" id="CJX-7w-SDo"/>
+                <constraint firstItem="lSi-0l-8fo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Emx-MF-ovL"/>
+                <constraint firstItem="wPk-xm-bmx" firstAttribute="top" secondItem="lSi-0l-8fo" secondAttribute="bottom" id="Im8-mS-qf8"/>
+                <constraint firstItem="wPk-xm-bmx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LTc-PL-IHn"/>
+                <constraint firstAttribute="trailing" secondItem="lSi-0l-8fo" secondAttribute="trailing" id="N36-8j-0k9"/>
+                <constraint firstAttribute="trailing" secondItem="wPk-xm-bmx" secondAttribute="trailing" id="R5m-kA-S9z"/>
+                <constraint firstItem="lSi-0l-8fo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nWU-aX-WFv"/>
+            </constraints>
+            <point key="canvasLocation" x="48.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="返回" width="10" height="20"/>
+    </resources>
+</document>

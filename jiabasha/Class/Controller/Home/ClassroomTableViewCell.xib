@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="KGk-i7-Jjw" customClass="ClassroomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFM-Ey-CCI" userLabel="head View">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_title_display2" translatesAutoresizingMaskIntoConstraints="NO" id="7kK-jy-kQG"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家芭莎课堂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqA-RS-aHL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.37647058820000001" green="0.098039215690000001" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_title_display2" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-35-Kfk"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FqA-RS-aHL" firstAttribute="centerY" secondItem="yFM-Ey-CCI" secondAttribute="centerY" id="19N-ZL-zCg"/>
+                            <constraint firstItem="FqA-RS-aHL" firstAttribute="centerX" secondItem="yFM-Ey-CCI" secondAttribute="centerX" id="Flj-zJ-vdt"/>
+                            <constraint firstItem="7kK-jy-kQG" firstAttribute="centerY" secondItem="yFM-Ey-CCI" secondAttribute="centerY" id="Vv1-SQ-nBm"/>
+                            <constraint firstAttribute="height" constant="50" id="qNH-PF-L4r"/>
+                            <constraint firstItem="CvU-35-Kfk" firstAttribute="centerY" secondItem="yFM-Ey-CCI" secondAttribute="centerY" id="tNP-d3-lTW"/>
+                            <constraint firstItem="CvU-35-Kfk" firstAttribute="leading" secondItem="FqA-RS-aHL" secondAttribute="trailing" constant="5" id="ucE-3G-XlC"/>
+                            <constraint firstItem="FqA-RS-aHL" firstAttribute="leading" secondItem="7kK-jy-kQG" secondAttribute="trailing" constant="5" id="vVP-yV-98R"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiabasha_class_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cWR-go-v7j">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cWR-go-v7j" secondAttribute="height" multiplier="180:254" id="TP0-kO-Awn"/>
+                        </constraints>
+                    </imageView>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzF-ov-EQW"/>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cWR-go-v7j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4KW-H3-g8Z"/>
+                    <constraint firstAttribute="trailing" secondItem="yzF-ov-EQW" secondAttribute="trailing" id="HRR-uX-xba"/>
+                    <constraint firstAttribute="bottom" secondItem="cWR-go-v7j" secondAttribute="bottom" constant="15" id="JhE-p4-UON"/>
+                    <constraint firstItem="cWR-go-v7j" firstAttribute="top" secondItem="yFM-Ey-CCI" secondAttribute="bottom" id="NeA-2X-dHr"/>
+                    <constraint firstAttribute="bottom" secondItem="yzF-ov-EQW" secondAttribute="bottom" id="Uz2-Gi-cdI"/>
+                    <constraint firstItem="yzF-ov-EQW" firstAttribute="top" secondItem="yFM-Ey-CCI" secondAttribute="bottom" id="VAf-kr-ySy"/>
+                    <constraint firstItem="yzF-ov-EQW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YXq-UE-hZe"/>
+                    <constraint firstAttribute="trailing" secondItem="yFM-Ey-CCI" secondAttribute="trailing" id="hMV-Up-kpf"/>
+                    <constraint firstItem="yzF-ov-EQW" firstAttribute="leading" secondItem="cWR-go-v7j" secondAttribute="trailing" priority="250" id="ia8-mQ-Bep"/>
+                    <constraint firstItem="yFM-Ey-CCI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qYF-6Q-4NY"/>
+                    <constraint firstItem="yFM-Ey-CCI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vFj-JO-XUO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewLogo" destination="cWR-go-v7j" id="eCC-Aq-X2m"/>
+                <outlet property="labelTitle" destination="FqA-RS-aHL" id="2cm-BA-mHl"/>
+                <outlet property="leftToImage" destination="ia8-mQ-Bep" id="IQq-p4-l90"/>
+                <outlet property="leftToSuper" destination="YXq-UE-hZe" id="mFV-Ma-xWz"/>
+                <outlet property="scrollView" destination="yzF-ov-EQW" id="ZeF-0I-pO1"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="140.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_title_display2" width="46" height="3"/>
+        <image name="jiabasha_class_logo" width="90" height="127"/>
+    </resources>
+</document>

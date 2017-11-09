@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SystemNotifyViewController">
+            <connections>
+                <outlet property="tableView" destination="eDn-9U-8ED" id="JKi-02-mYo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewDelete" destination="KQX-Mw-Aho" id="m4Y-Xx-KwH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-9U-8ED">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eDn-9U-8ED" secondAttribute="bottom" id="ELU-GF-xsZ"/>
+                <constraint firstItem="eDn-9U-8ED" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OjG-Km-oHB"/>
+                <constraint firstAttribute="trailing" secondItem="eDn-9U-8ED" secondAttribute="trailing" id="jjD-uP-DqG"/>
+                <constraint firstItem="eDn-9U-8ED" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="nzG-dR-8L4"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="bRS-f8-X4d">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无数据提示" translatesAutoresizingMaskIntoConstraints="NO" id="qzF-sp-E55"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里空空的，什么都没有" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2x-Jl-4pf">
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qzF-sp-E55" firstAttribute="top" secondItem="bRS-f8-X4d" secondAttribute="top" constant="119" id="46Q-gk-bt5"/>
+                <constraint firstItem="qzF-sp-E55" firstAttribute="centerX" secondItem="bRS-f8-X4d" secondAttribute="centerX" id="uN4-oH-SoT"/>
+                <constraint firstItem="f2x-Jl-4pf" firstAttribute="centerX" secondItem="bRS-f8-X4d" secondAttribute="centerX" id="vi1-VX-XPk"/>
+                <constraint firstItem="f2x-Jl-4pf" firstAttribute="top" secondItem="qzF-sp-E55" secondAttribute="bottom" constant="35" id="wA9-Ll-CEc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="455" y="54"/>
+        </view>
+        <view contentMode="scaleToFill" id="KQX-Mw-Aho">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="消息中心_删除icon" translatesAutoresizingMaskIntoConstraints="NO" id="gpC-m7-V5H"/>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gpC-m7-V5H" firstAttribute="centerY" secondItem="KQX-Mw-Aho" secondAttribute="centerY" id="RUG-sz-cx3"/>
+                <constraint firstItem="gpC-m7-V5H" firstAttribute="centerX" secondItem="KQX-Mw-Aho" secondAttribute="centerX" id="ZZI-hZ-EYE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="773" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="无数据提示" width="149" height="135"/>
+        <image name="消息中心_删除icon" width="70" height="33"/>
+    </resources>
+</document>

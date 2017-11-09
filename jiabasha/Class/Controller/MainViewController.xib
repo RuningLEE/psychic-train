@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="_labelContent" destination="fVf-tq-JK9" id="5lj-tX-dNr"/>
+                <outlet property="_textFieldUser" destination="Ve7-Wx-3DA" id="CYH-eE-fop"/>
+                <outlet property="_textFiledPassWord" destination="r4H-Cu-ebF" id="04j-29-bqU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4H-Cu-ebF">
+                    <rect key="frame" x="44" y="118" width="288" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="288" id="bbG-cr-7ah"/>
+                        <constraint firstAttribute="height" constant="30" id="iWR-sE-pXb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCD-Ht-oP8">
+                    <rect key="frame" x="164" y="204" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="A9v-RP-D2X"/>
+                        <constraint firstAttribute="height" constant="30" id="Vfy-8Y-k3y"/>
+                    </constraints>
+                    <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="LoginAction:" destination="-1" eventType="touchUpInside" id="WeA-Lr-wzy"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ve7-Wx-3DA">
+                    <rect key="frame" x="44" y="73" width="288" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="288" id="WhV-be-6lF"/>
+                        <constraint firstAttribute="height" constant="30" id="bhf-ln-0KI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh8-54-HDG">
+                    <rect key="frame" x="37" y="158" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ajg-7d-MgD"/>
+                        <constraint firstAttribute="width" constant="300" id="dTB-bf-SS6"/>
+                    </constraints>
+                    <state key="normal" title="自动填充账号密码"/>
+                    <connections>
+                        <action selector="onTestClicked:" destination="-1" eventType="touchUpInside" id="Pg8-Iy-Mh6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVf-tq-JK9">
+                    <rect key="frame" x="10" y="249" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fVf-tq-JK9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="750" constant="10" id="JpY-J1-pDy"/>
+                <constraint firstItem="fVf-tq-JK9" firstAttribute="top" secondItem="VCD-Ht-oP8" secondAttribute="bottom" constant="15" id="MJn-7e-5rw"/>
+                <constraint firstItem="Ve7-Wx-3DA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="Mmq-XJ-wpR"/>
+                <constraint firstAttribute="trailing" secondItem="fVf-tq-JK9" secondAttribute="trailing" priority="750" constant="10" id="Ny9-gT-lxw"/>
+                <constraint firstItem="Ve7-Wx-3DA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R9u-gd-36x"/>
+                <constraint firstItem="r4H-Cu-ebF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U5R-eN-KYW"/>
+                <constraint firstItem="VCD-Ht-oP8" firstAttribute="top" secondItem="r4H-Cu-ebF" secondAttribute="bottom" constant="56" id="X5Q-6a-KaN"/>
+                <constraint firstItem="vh8-54-HDG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a99-Ah-Bss"/>
+                <constraint firstItem="VCD-Ht-oP8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="edU-Tj-ajf"/>
+                <constraint firstItem="r4H-Cu-ebF" firstAttribute="top" secondItem="Ve7-Wx-3DA" secondAttribute="bottom" constant="15" id="h35-ve-WLQ"/>
+                <constraint firstItem="vh8-54-HDG" firstAttribute="top" secondItem="r4H-Cu-ebF" secondAttribute="bottom" constant="10" id="t6V-J2-1z7"/>
+                <constraint firstItem="fVf-tq-JK9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x5q-ty-CMd"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
